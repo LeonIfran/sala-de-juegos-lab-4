@@ -8,13 +8,17 @@ import {MatButtonModule,
   MatCheckboxModule,
   MatCardModule,
   MatProgressSpinnerModule,
- MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule} from '@angular/material';
+ MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatDialogModule, MatInputModule} from '@angular/material';
 
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { RockPaperScissorsComponent } from './componentes/rock-paper-scissors/rock-paper-scissors.component';
 import { PrincipalNavComponent } from './principal-nav/principal-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MiDashBoardComponent } from './componentes/mi-dash-board/mi-dash-board.component';
+import { AdivinaNumeroComponent } from './componentes/adivina-numero/adivina-numero.component';
+import { FormsModule } from '@angular/forms';
+import { ResultadoComponent } from './componentes/resultado/resultado.component';
+import { AritmeticaComponent } from './componentes/aritmetica/aritmetica.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { MiDashBoardComponent } from './componentes/mi-dash-board/mi-dash-board.
     PrincipalComponent,
     RockPaperScissorsComponent,
     PrincipalNavComponent,
-    MiDashBoardComponent
+    MiDashBoardComponent,
+    AdivinaNumeroComponent,
+    ResultadoComponent,
+    AritmeticaComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,10 @@ import { MiDashBoardComponent } from './componentes/mi-dash-board/mi-dash-board.
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule,
+    FormsModule,
+    MatInputModule
     
 
   ],

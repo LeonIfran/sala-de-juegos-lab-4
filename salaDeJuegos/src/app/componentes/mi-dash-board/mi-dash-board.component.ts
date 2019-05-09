@@ -21,13 +21,14 @@ export class MiDashBoardComponent {
       }
 
       return [
-        { title: 'RPS', cols: 2, rows: 1, img: "ppt.png", texto: 'Elija su arma y juegue contra la computadora' },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
+        { title: 'RPS', cols: 2, rows: 1, img: "ppt.png", texto: 'Elija su arma y juegue contra la computadora', ruta: '/rps' },
+        { title: 'Aritmetica', cols: 1, rows: 1, img: "aritmetica.jpg", texto: 'Pruebe la destreza de su mente', ruta: '/Aritmetica'},
+        { title: 'Adivine el numero', cols: 1, rows: 2, img: "adivina.jpg", texto: 'Pruebe su suerte', ruta: '/AdivinaNumero' },
         { title: 'Card 4', cols: 1, rows: 1 }
       ];
     })
   );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+  Redireccionar(url: string) { location.href = url; }
 }

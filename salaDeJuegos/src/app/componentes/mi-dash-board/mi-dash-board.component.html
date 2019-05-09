@@ -15,7 +15,7 @@
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
-        <mat-card-content class="dashboard-card-content" routerLinkActive="active" routerLink="/rps">
+        <mat-card-content class="dashboard-card-content" routerLinkActive="active" [routerLink]="card.ruta" >
           <div>
               <img src="../../../assets/{{card.img}}" />
               <div class="texto">{{card.texto}}</div>

@@ -1,0 +1,58 @@
+<mat-toolbar color="accent">
+  <h1>Agilidad Aritmética</h1>
+
+</mat-toolbar>
+<div class="content">
+<mat-card>
+  <mat-card-subtitle>
+    Se le presenta una cuenta aritmética y tiene un tiempo determinado para contestar.
+  </mat-card-subtitle>
+</mat-card>
+</div>
+<!-- <img src="..." class="card-img-top" alt="..."> -->
+<div class="content1">
+  <mat-card class="">
+    <mat-card-content>Primer Operando
+      <input type="number" disabled [value]=prOperando>
+    </mat-card-content>
+
+    <mat-card-content>
+      <label>Operación Aritmetica</label>
+      <input type="text" disabled [value]=operacion>
+    </mat-card-content>
+    <mat-card-content>
+      <label>Segundo Operando</label>
+      <input type="number" disabled [value]=sgOperando>
+    </mat-card-content>
+    <mat-card-content>
+      <label>Respuesta</label>
+      <input type="number" [(ngModel)]="respuesta">
+    </mat-card-content>
+
+    <div *ngIf="esperando == false">
+      <mat-card-actions>
+        <button class="btn btn-primary" (click)="NuevaOperacion()" mat-raised-button  color="primary">Nuevo</button>
+      </mat-card-actions>
+    </div>
+    <div *ngIf="esperando == true" class="width-100">
+      <div>
+        <mat-card-actions>
+          <button class="btn btn-success" (click)="VerificarOperacion()" mat-raised-button  color="primary">Verificar</button>
+        </mat-card-actions>
+      </div>
+      <div>
+        <label class="intentos">Tiempo restante: {{tiempo}} segundo/s.</label>
+      </div>
+    </div>
+    <mat-card-footer>
+    <label class="intentos">Ha ganado {{contador}} vez/veces.</label>
+  </mat-card-footer>
+  </mat-card>
+
+</div>
+
+
+
+
+
+<app-resultado [mensaje]=msgResultado [valido]=valido></app-resultado>
