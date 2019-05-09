@@ -8,16 +8,21 @@ import {MatButtonModule,
   MatCheckboxModule,
   MatCardModule,
   MatProgressSpinnerModule,
- MatToolbarModule} from '@angular/material';
+ MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule} from '@angular/material';
 
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { RockPaperScissorsComponent } from './componentes/rock-paper-scissors/rock-paper-scissors.component';
+import { PrincipalNavComponent } from './principal-nav/principal-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MiDashBoardComponent } from './componentes/mi-dash-board/mi-dash-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
-    RockPaperScissorsComponent
+    RockPaperScissorsComponent,
+    PrincipalNavComponent,
+    MiDashBoardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,13 @@ import { RockPaperScissorsComponent } from './componentes/rock-paper-scissors/ro
     MatCheckboxModule,
     MatToolbarModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatMenuModule
     
 
   ],
