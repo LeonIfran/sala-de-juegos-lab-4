@@ -17,7 +17,11 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content" routerLinkActive="active" [routerLink]="card.ruta" >
           <div>
-              <img src="../../../assets/{{card.img}}" />
+<!--          <img src="/salaDeJuegos/src/assets/{{card.img}}" />
+              <img src="/src/assets/aritmetica.jpg" />
+              <img src="../../../assets/aritmetica.jpg" />  Path relativo-->
+              <!--<img src="/assets/aritmetica.jpg" />  Path completo? -->
+              <img src="./assets/{{card.img}}" />
               <div class="texto">{{card.texto}}</div>
           </div>
         </mat-card-content>
