@@ -15,9 +15,9 @@
 
       <h3> Elegi tu arma: </h3>
       <div class="content2">
-          <i (click)="elegir(0)" class="fa fa-hand-rock-o">✊</i>
-          <i (click)="elegir(1)" class="fa fa-hand-paper-o">✋</i>
-          <i (click)="elegir(2)" class="fa fa-hand-scissors-o">✌</i>
+          <i (click)="elegir(0)" class="fas fa-hand-rock"></i>
+          <i (click)="elegir(1)" class="fas fa-hand-paper"></i>
+          <i (click)="elegir(2)" class="fas fa-hand-scissors"></i>
       </div>
 
     </mat-card-content>
@@ -34,9 +34,9 @@
     <br><br>
 
     <div *ngIf="enemigoSelecciono !== -1" class="flex-container flex-center">
-      <i *ngIf="enemigoSelecciono === 0" class="fa fa-hand-rock-o">✊</i>
-      <i *ngIf="enemigoSelecciono === 1" class="fa fa-hand-paper-o">✋</i>
-      <i *ngIf="enemigoSelecciono === 2" class="fa fa-hand-scissors-o">✌</i>
+      <i *ngIf="enemigoSelecciono === 0" class="fas fa-hand-rock"><!-- ✊ --></i>
+      <i *ngIf="enemigoSelecciono === 1" class="fas fa-hand-paper"><!-- ✋ --></i>
+      <i *ngIf="enemigoSelecciono === 2" class="fas fa-hand-scissors"><!-- ✌ --></i>
 
     </div>
   </mat-card>
@@ -49,7 +49,7 @@
   <ng-template [ngSwitchCase]= "2"> <h1>EMPATE! </h1> </ng-template>
   <ng-template ngSwitchDefault> </ng-template>
 </div> 
-    <p> Elija de nuevo para continuar o </p>
+    <p> Elija otra arma para continuar </p>
     <button  (click)="reset()" mat-raised-button  color="primary"> Resetear Puntuacion</button>
 </div>
 

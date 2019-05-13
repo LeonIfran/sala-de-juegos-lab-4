@@ -7,14 +7,16 @@ import { MiDashBoardComponent } from './componentes/mi-dash-board/mi-dash-board.
 
 import { AdivinaNumeroComponent } from './componentes/adivina-numero/adivina-numero.component';
 import { AritmeticaComponent } from './componentes/aritmetica/aritmetica.component';
+import { BanderaComponent } from './componentes/bandera/bandera.component';
 
 const routes: Routes = [
   { path: 'principal', component: MiDashBoardComponent },
   { path: 'rps', component: RockPaperScissorsComponent },
   { path: 'AdivinaNumero', component: AdivinaNumeroComponent },
   { path: 'Aritmetica', component: AritmeticaComponent },
+  { path: 'Banderas', component: BanderaComponent },
   { path: '', redirectTo: '/principal', pathMatch: 'full' },
-  //{ path: '**', redirectTo: '/principal', pathMatch: 'full' },
+  { path: '**', redirectTo: '/principal', pathMatch: 'full' }
 ];
 
 @NgModule({

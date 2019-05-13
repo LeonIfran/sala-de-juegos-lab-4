@@ -8,7 +8,7 @@ import {MatButtonModule,
   MatCheckboxModule,
   MatCardModule,
   MatProgressSpinnerModule,
- MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatDialogModule, MatInputModule} from '@angular/material';
+ MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatDialogModule, MatInputModule, MatRadioModule} from '@angular/material';
 
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { RockPaperScissorsComponent } from './componentes/rock-paper-scissors/rock-paper-scissors.component';
@@ -19,6 +19,7 @@ import { AdivinaNumeroComponent } from './componentes/adivina-numero/adivina-num
 import { FormsModule } from '@angular/forms';
 import { ResultadoComponent } from './componentes/resultado/resultado.component';
 import { AritmeticaComponent } from './componentes/aritmetica/aritmetica.component';
+import { BanderaComponent } from './componentes/bandera/bandera.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AritmeticaComponent } from './componentes/aritmetica/aritmetica.compone
     MiDashBoardComponent,
     AdivinaNumeroComponent,
     ResultadoComponent,
-    AritmeticaComponent
+    AritmeticaComponent,
+    BanderaComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { AritmeticaComponent } from './componentes/aritmetica/aritmetica.compone
     MatMenuModule,
     MatDialogModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatRadioModule
     
 
   ],

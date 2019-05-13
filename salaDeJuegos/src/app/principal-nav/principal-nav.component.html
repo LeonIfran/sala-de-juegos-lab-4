@@ -4,11 +4,12 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-        <a mat-list-item routerLinkActive="active" routerLink="/principal">Inicio</a>
+    <mat-nav-list >
+      <a mat-list-item routerLinkActive="active" routerLink="/principal">Inicio</a>
       <a mat-list-item routerLinkActive="active" routerLink="/rps">RPS</a>
-      <a mat-list-item routerLinkActive="active" routerLink="/AdivinaNumero">Adivina el numero</a>
+      <a mat-list-item routerLinkActive="active" routerLink="/AdivinaNumero" >Adivina el numero</a>
       <a mat-list-item routerLinkActive="active" routerLink="/Aritmetica">Velocidad Aritmetica</a>
+      <a mat-list-item routerLinkActive="active" routerLink="/Banderas">Adivine el pais</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

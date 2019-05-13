@@ -24,7 +24,7 @@ export class MiDashBoardComponent {
         { title: 'RPS', cols: 2, rows: 1, img: "ppt.png", texto: 'Elija su arma y juegue contra la computadora', ruta: '/rps' },
         { title: 'Aritmetica', cols: 1, rows: 1, img: "aritmetica.jpg", texto: 'Pruebe la destreza de su mente', ruta: '/Aritmetica'},
         { title: 'Adivine el numero', cols: 1, rows: 2, img: "adivina.jpg", texto: 'Pruebe su suerte', ruta: '/AdivinaNumero' },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Adivine el pais', cols: 1, rows: 1, img: "banderas.jpg", texto:'Demuestre su conocimiento en geografia', ruta: '/Banderas' }
       ];
     })
   );
