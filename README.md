@@ -2,7 +2,7 @@
 ## [Link al hosting del proyecto](http://leonifran.000webhostapp.com/salaDeJuegos/)
 
 ### Proyecto realizado con el framework Angular.
-El objetivo es realizar una pagina de juegos con cuatro juegos en total:
+El proyecto cuenta con los siguientes juegos
 - Piedra, papel y tijeras
 - Adivina el numero
 - Velocidad Aritmetica
